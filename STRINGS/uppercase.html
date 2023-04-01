@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPPERCASE</title>
+</head>
+<body>
+  
+  <script>
+          /*
+      Uppercase the first character
+      importance: 5
+      Write a function ucFirst(str) that returns the string str with the uppercased first character, for instance:
+      */
+      let str = 'john' ;
+      // ucFirst("john") == "John";
+      
+      // let newStr = str[0].toUpperCase() + str.slice(1);
+      
+      function ucFirst(str) {
+        if (!str) return str;
+      
+        return str[0].toUpperCase() + str.slice(1);
+      }
+      
+      alert( ucFirst("john") ); // John
+
+      // important de tinut minte : strings are immutable, dar putem face un alt string bazat pe acel vechi, ca in exemplu de mai sus. 
+      // am folosit function, din cauza ca in caz ca string-ul e gol, atunci rezultatul ar fi undefined. Folosing function, am primit rezultatul dorit , adica "John".
+  </script>
+</body>
+</html>
